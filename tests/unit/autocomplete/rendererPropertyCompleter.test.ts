@@ -4,10 +4,13 @@ import {
   CompletionIndex,
   ContextScenarioType,
 } from "src/autocomplete/autocompletion";
-import { PropertyCompletion, RendererDescriptor } from "src/rendererApi";
+import {
+  PropertyCompletion,
+  RendererDescriptor,
+} from "@formulavize/renderer-api-formulavize";
 // The descriptor, not the plugin: the completer needs the renderer's
 // vocabulary, never the component that draws it.
-import { cytoscapeRendererMeta } from "src/renderers/cyDag/meta";
+import { cytoscapeRendererMeta } from "@formulavize/renderer-cytoscape-formulavize/meta";
 import { createMockContext, runSource } from "./autocompleteTestHelpers";
 
 describe("rendererPropertyCompleter", () => {

@@ -17,7 +17,7 @@ import {
   FileExportOptions,
   RendererComponent,
   IRenderer,
-} from "../rendererApi";
+} from "@formulavize/renderer-api-formulavize";
 
 // GraphView - Component for rendering the DAG visualization
 // Uses a pluggable renderer component to display the graph enabling flexibility

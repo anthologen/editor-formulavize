@@ -1,6 +1,6 @@
-import { RendererDescriptor } from "../rendererApi";
-import { cytoscapeHeadlessPlugin } from "./cyDag/headless";
-import { minimalRendererMeta } from "./minExample/meta";
+import { RendererDescriptor } from "@formulavize/renderer-api-formulavize";
+import { cytoscapeHeadlessPlugin } from "@formulavize/renderer-cytoscape-formulavize/headless";
+import { minimalRendererMeta } from "@formulavize/renderer-minimal-formulavize/meta";
 
 /**
  * Every renderer the CLI knows about.
@@ -11,7 +11,8 @@ import { minimalRendererMeta } from "./minExample/meta";
  *
  * These are descriptors rather than plugins because no headless caller needs
  * the Vue component, and loading one would drag the browser rendering stack
- * into the CLI.
+ * into the CLI. Each renderer package keeps its node-safe descriptor on a
+ * subpath that never reaches for a DOM.
  */
 export const headlessRendererDescriptors: readonly RendererDescriptor[] = [
   cytoscapeHeadlessPlugin,

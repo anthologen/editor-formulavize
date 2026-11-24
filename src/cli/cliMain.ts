@@ -8,7 +8,7 @@ import {
   ExportFormat,
   RendererRegistry,
   type HeadlessRenderOptions,
-} from "../rendererApi";
+} from "@formulavize/renderer-api-formulavize";
 import { headlessRendererDescriptors } from "../renderers/headlessRenderers";
 import { makeNodeSourceFetcher } from "./nodeSourceFetcher";
 

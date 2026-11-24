@@ -3,7 +3,7 @@ import {
   ExportFormat,
   RendererDescriptor,
   RendererRegistry,
-} from "src/rendererApi";
+} from "@formulavize/renderer-api-formulavize";
 import { headlessRendererDescriptors } from "src/renderers/headlessRenderers";
 import { Dag, DagStyle } from "@formulavize/compiler-frontend-fiz/dag";
 

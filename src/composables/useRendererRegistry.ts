@@ -5,7 +5,7 @@ import {
   RendererComponent,
   RendererPlugin,
   RendererRegistry,
-} from "../rendererApi";
+} from "@formulavize/renderer-api-formulavize";
 
 /**
  * Resolves which renderer draws the dag from the dag itself.

@@ -1,17 +1,17 @@
 import { Puzzlet, SuccessCriterion } from "../lesson";
 import { normal, fast } from "../animationHelpers";
-import { getRendererDirectiveProperties } from "src/rendererApi";
+import { getRendererDirectiveProperties } from "@formulavize/renderer-api-formulavize";
 import { StyleProperties } from "@formulavize/compiler-frontend-fiz/dag";
 import {
   CYTOSCAPE_RENDERER_NAME,
   LAYOUT_PROPERTY,
-} from "src/renderers/cyDag/constants";
-import { elkLayout } from "src/renderers/cyDag/layouts/elk";
+} from "@formulavize/renderer-cytoscape-formulavize/constants";
+import { elkLayout } from "@formulavize/renderer-cytoscape-formulavize/layouts/elk";
 import {
   DEFAULT_CYTOSCAPE_LAYOUT,
   MANUAL_CYTOSCAPE_LAYOUT,
-} from "src/renderers/cyDag/layouts/types";
-import { MINIMAL_RENDERER_NAME } from "src/renderers/minExample/meta";
+} from "@formulavize/renderer-cytoscape-formulavize/layouts/types";
+import { MINIMAL_RENDERER_NAME } from "@formulavize/renderer-minimal-formulavize/meta";
 
 type PuzzletCompilation = Parameters<SuccessCriterion["check"]>[0];
 

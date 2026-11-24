@@ -90,7 +90,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onMounted } from "vue";
-import { ExportFormat } from "./rendererApi";
+import { ExportFormat } from "@formulavize/renderer-api-formulavize";
 import TextEditor from "./components/TextEditor.vue";
 import GraphView from "./components/GraphView.vue";
 import TextDumpView from "./components/TextDumpView.vue";

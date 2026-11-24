@@ -1,10 +1,16 @@
 allowBuilds:
+  "@formulavize/renderer-api-formulavize": true
+  "@formulavize/renderer-cytoscape-formulavize": true
+  "@formulavize/renderer-minimal-formulavize": true
   "@formulavize/compiler-frontend-fiz": true
   "@formulavize/lang-fiz": true
   "@formulavize/lezer-fiz": true
   "@tsparticles/engine": true
   esbuild: true
 minimumReleaseAgeExclude:
+  - "@formulavize/renderer-api-formulavize"
+  - "@formulavize/renderer-cytoscape-formulavize"
+  - "@formulavize/renderer-minimal-formulavize"
   - "@formulavize/compiler-frontend-fiz"
   - "@formulavize/lang-fiz"
   - "@formulavize/lezer-fiz"

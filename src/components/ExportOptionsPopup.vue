@@ -63,7 +63,7 @@
 <script lang="ts">
 import { defineComponent, ref, PropType } from "vue";
 import { mdiExport, mdiCloseCircleOutline, mdiDownload } from "@mdi/js";
-import { ExportFormat } from "../rendererApi";
+import { ExportFormat } from "@formulavize/renderer-api-formulavize";
 import { VForm } from "vuetify/components";
 
 const fileNameRules = [

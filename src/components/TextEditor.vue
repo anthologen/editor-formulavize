@@ -62,7 +62,7 @@ import { colorPicker } from "../editor/colorPicker";
 import { CompletionIndex } from "../autocomplete/autocompletion";
 import { getAllDynamicCompletionSources } from "../autocomplete/autocompleter";
 import { createRendererPropertyCompletionSource } from "../autocomplete/rendererPropertyCompleter";
-import { RendererDescriptor } from "../rendererApi";
+import { RendererDescriptor } from "@formulavize/renderer-api-formulavize";
 
 // Tutorial header protection logic
 // This logic ensures that the tutorial header (a section of the editor

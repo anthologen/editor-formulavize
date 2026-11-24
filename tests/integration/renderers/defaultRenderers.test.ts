@@ -6,7 +6,10 @@
 // plugin list rather than stand-ins, so it is the one test that needs a DOM.
 import { describe, test, expect } from "vitest";
 import { Compiler } from "@formulavize/compiler-frontend-fiz/driver";
-import { ExportFormat, RendererRegistry } from "src/rendererApi";
+import {
+  ExportFormat,
+  RendererRegistry,
+} from "@formulavize/renderer-api-formulavize";
 import { defaultRendererPlugins as plugins } from "src/renderers/defaultRenderers";
 
 const registry = new RendererRegistry(plugins);

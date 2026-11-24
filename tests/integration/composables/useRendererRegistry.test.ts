@@ -1,6 +1,9 @@
 import { describe, test, expect, beforeEach, afterEach } from "vitest";
 import { effectScope, shallowRef, nextTick } from "vue";
-import { ExportFormat, RendererPlugin } from "src/rendererApi";
+import {
+  ExportFormat,
+  RendererPlugin,
+} from "@formulavize/renderer-api-formulavize";
 import { Dag, DagStyle } from "@formulavize/compiler-frontend-fiz/dag";
 import { useRendererRegistry } from "src/composables/useRendererRegistry";
 
